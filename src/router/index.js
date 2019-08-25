@@ -9,7 +9,7 @@ export default new Router({
     {
       path: '/',
       name: 'Form',
-      component:Form 
+      component: Form
     }
   ]
 })

@@ -1,18 +1,23 @@
 <template>
   <div id="app">
     <nav-bar/>
-    <message/>
+    <div id="content">
+      <message/>
+      <form/>
+    </div>
   </div>
 </template>
 
 <script>
 import NavBar from './components/NavBar'
 import Message from './components/Message'
+import Form from './components/Form'
 export default {
   name: 'App',
-  components:{
+  components: {
     NavBar,
-    Message
+    Message,
+    Form
   }
 }
 </script>
@@ -25,5 +30,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+#content {
+  margin:0 10% 100px;
 }
 </style>
